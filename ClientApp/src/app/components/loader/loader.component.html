@@ -1,0 +1,62 @@
+﻿<ng-progress id="custom-progress" #customProgress color="red" (started)="onStarted()" (completed)="onCompleted()"></ng-progress>
+
+<div class="grid">
+	<table>
+		<tr>
+			<td>
+				<button class="button" (click)="customProgress.start()">
+					<img src="https://cdn.rawgit.com/MurhafSousli/ngx-progressbar/c3e3d574/demo/src/assets/img/play.svg" />
+				</button>
+			</td>
+			<td>NgProgress.
+				<strong>start()</strong> —
+				<i>shows the progress bar</i>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<button class="button" (click)="customProgress.set(40)">
+					<img src="https://cdn.rawgit.com/MurhafSousli/ngx-progressbar/c3e3d574/demo/src/assets/img/play.svg" />
+				</button>
+			</td>
+			<td>NgProgress.
+				<strong>set(40)</strong> —
+				<i>sets a percentage 40%</i>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<button class="button" (click)="customProgress.inc(20)">
+					<img src="https://cdn.rawgit.com/MurhafSousli/ngx-progressbar/c3e3d574/demo/src/assets/img/play.svg" />
+				</button>
+			</td>
+			<td>NgProgress.
+				<strong>inc(20)</strong> —
+				<i>increments by a percentage 20%</i>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<button class="button" (click)="customProgress.complete()">
+					<img src="https://cdn.rawgit.com/MurhafSousli/ngx-progressbar/c3e3d574/demo/src/assets/img/play.svg" />
+				</button>
+			</td>
+			<td>NgProgress.
+				<strong>complete()</strong> —
+				<i>completes the progress</i>
+			</td>
+		</tr>
+	</table>
+	<div class="events">
+		<span class="chip" [class.changed]="startedClass"> NgProgress.
+			<strong>started</strong>
+		</span>
+		<span class="chip" [class.changed]="completedClass"> NgProgress.
+			<strong>completed</strong>
+		</span>
+
+		<button class="btn btn-outline-primary" (click)="testHttp()" [disabled]="preventAbuse">
+			{{ preventAbuse ? 'Wait...' : 'Test Http Request' }}
+		</button>
+	</div>
+</div>
