@@ -35,7 +35,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<None Include=".angular-cli.json" />
 		<None Include="package.json" />
 		<None Include="tsconfig.json" />
 		<None Include="tslint.json" />
