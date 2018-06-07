@@ -15,7 +15,6 @@
             "extractCss": true,
             "namedChunks": true,
             "vendorChunk": true,
-            "commonChunk": true,
             "verbose": true,
             "outputPath": "wwwroot",
             "index": "ClientApp/src/index.html",
@@ -40,24 +39,16 @@
             "scripts": []
           },
           "configurations": {
-            "development": {
-              "extractCss": true,
-              "namedChunks": true,
-              "vendorChunk": true,
-              "commonChunk": true,
-              "verbose": true
-            },
             "production": {
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
               "extractCss": true,
               "namedChunks": false,
+              "vendorChunk": false,
+              "verbose": false,
               "aot": true,
               "extractLicenses": true,
-              "vendorChunk": false,
-              "commonChunk": false,
-              "verbose": false,
               "buildOptimizer": true,
               "fileReplacements": [
                 {

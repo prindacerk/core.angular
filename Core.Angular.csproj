@@ -57,7 +57,7 @@
 		<Message Importance="high" Text="Restoring dependencies using 'yarn'. This may take several minutes..." />
 		<Exec WorkingDirectory="$(SpaRoot)" Command="yarn install" />
 		<!-- Build angular project -->
-		<Exec WorkingDirectory="$(SpaRoot)" Command="ng build --extract-css" />
+		<Exec WorkingDirectory="$(SpaRoot)" Command="ng build" />
 	</Target>
 
 	<Target Name="PublishRunWebpack" AfterTargets="ComputeFilesToPublish">
