@@ -34,9 +34,49 @@
               }
             ],
             "styles": [
-              "ClientApp/src/styles/styles.scss"
+              "ClientApp/src/styles/styles.scss",
+              "ClientApp/src/styles/css/style-main.css",
+              "ClientApp/src/styles/css/colors/theme-skin-color-set-custom.css",
+              "ClientApp/src/styles/css/menuzord-skins/menuzord-bottom-trace.css",
+              "ClientApp/src/styles/css/preloader.css",
+              "ClientApp/src/styles/css/responsive.css"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/jquery/dist/jquery.min.js",
+              "ClientApp/src/scripts/jquery.plugins/jquery-ui.min.js",
+
+              //"./node_modules/popper.js/dist/umd/popper.min.js",
+              //"./node_modules/bootstrap/dist/js/bootstrap.min.js",
+
+              "ClientApp/src/scripts/jquery.plugins/js.cookie.min.js",
+              "ClientApp/src/scripts/jquery.plugins/jquery.easing.min.js",
+              "ClientApp/src/scripts/jquery.plugins/jquery.scrollTo.min.js",
+              "ClientApp/src/scripts/jquery.plugins/jquery.localScroll.min.js",
+              "ClientApp/src/scripts/jquery.plugins/SmoothScroll.min.js",
+              "ClientApp/src/scripts/jquery.plugins/jquery.appear.min.js",
+              "ClientApp/src/scripts/jquery.plugins/modernizr.min.js",
+              "ClientApp/src/scripts/jquery.plugins/jquery-scrolltofixed-min.js",
+              "ClientApp/src/scripts/jquery.plugins/menuzord.min.js",
+              "ClientApp/src/scripts/jquery.plugins/imagesloaded.pkgd.min.js",
+              "ClientApp/src/scripts/jquery.plugins/isotope.pkgd.min.js",
+              "ClientApp/src/scripts/jquery.plugins/jquery-parallax-min.js",
+              "ClientApp/src/scripts/jquery.plugins/jquery.animateNumbers.min.js",
+              "ClientApp/src/scripts/jquery.plugins/wow.min.js",
+              "ClientApp/src/scripts/jquery.plugins/owl.carousel.min.js",
+              "ClientApp/src/scripts/jquery.plugins/nivo-lightbox.min.js",
+              "ClientApp/src/scripts/jquery.plugins/equalHeights.min.js",
+              "ClientApp/src/scripts/jquery.plugins/jquery.bxslider.min.js",
+              "ClientApp/src/scripts/jquery.plugins/moment.min.js",
+              "ClientApp/src/scripts/jquery.plugins/jquery.validate.min.js",
+              "ClientApp/src/scripts/jquery.plugins/jquery.form.min.js",
+              "ClientApp/src/scripts/jquery.plugins/infinite-scroll.pkgd.min.js",
+              "ClientApp/src/scripts/jquery.plugins/jquery.pajinate.min.js",
+              "ClientApp/src/scripts/jquery.plugins/bootstrap-datetimepicker.min.js",
+              "ClientApp/src/scripts/jquery.plugins/jquery.ddslick.min.js",
+              //"ClientApp/src/scripts/jquery.plugins/",
+
+              "ClientApp/src/scripts/custom.js"
+            ]
           },
           "configurations": {
             "production": {
